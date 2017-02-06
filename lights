@@ -1,0 +1,13 @@
+// make a request
+$.ajax({
+  url: 'https://api.wit.ai/message',
+  data: {
+    'q': 'Turn on the lights',
+    'access_token' : 'MY_WIT_TOKEN'
+  },
+  dataType: 'jsonp',
+  method: 'GET',
+  success: function(response) {
+    console.log(response);
+  }
+});
